@@ -5,10 +5,10 @@ body {
 }
 #map {
   position: absolute;
-  top: 20%;
+  top: 34%;
   margin: auto;
   height: 73%;
-  width: 56%;
+  width: 75%;
   border-radius: 5px;
   border: 10px solid black;
 }
