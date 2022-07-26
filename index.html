@@ -23,31 +23,43 @@
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <section class="top-nav">
-      <div>Logo Here</div>
+      <div>Disaster App</div>
       <input id="menu-toggle" type="checkbox" />
       <label class="menu-button-container" for="menu-toggle">
         <div class="menu-button"></div>
       </label>
       <ul class="menu">
-        <li>Rescue Teams</li>
+        <a href="./rescue.html" class="btn btn-light"><li>Rescue Teams</li></a>
+
       </ul>
     </section>
-    <div class="container" style="color: white;">
-      <span class="display-6"> Set Disaster Types</span>
-    </div>
-    <div class="container mt-3" >
-      <button class="btn btn-outline-light m-lg-2" id="wildfire">Wild Fires</button>
-      <button class="btn btn-outline-light m-lg-2" id="volcano">Volcano</button>
-      <button class="btn btn-outline-light m-lg-2" id="iceberg">Iceberg</button>
-    </div>
-    <div class="container" style="height: 20px;" >
-      <div class="spinner-border text-light" role="status" id="spinner">
-        <span class="visually-hidden">Loading...</span>
+    <div id="disaster page">
+      <div class="container" style="color: white">
+        <span class="display-6"> Set Disaster Types</span>
+      </div>
+      <div class="container mt-3">
+        <button class="btn btn-outline-light m-lg-2" id="wildfire">
+          Wild Fires
+        </button>
+        <button class="btn btn-outline-light m-lg-2" id="volcano">
+          Volcano
+        </button>
+        <button class="btn btn-outline-light m-lg-2" id="iceberg">
+          Iceberg
+        </button>
+      </div>
+      <div class="container" style="height: 20px">
+        <div class="spinner-border text-light" role="status" id="spinner">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div id="map"></div>
       </div>
     </div>
+    <div id="rescuepage">
 
-    <div class="container mt-4">
-      <div id="map"></div>
     </div>
     <script src="script.js"></script>
     <script
